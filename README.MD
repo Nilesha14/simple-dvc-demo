@@ -25,3 +25,25 @@ pip install -r requirements.txt
 ```
 
 touch README.MD
+
+touch template.py
+
+write code in template file
+
+python template.py
+
+mkdir data_given
+
+download the data and keep in data_given folder
+
+git init
+
+dvc init
+
+dvc add data_given/winequality.csv
+
+git add . 
+git commit -m "fist commit"
+
+git add . && git commit -m "update README.md"
+
