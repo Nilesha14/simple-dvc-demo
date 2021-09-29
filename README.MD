@@ -9,30 +9,10 @@ conda activate wineq
 ```
 
 created req file
-```bash
-touch requirements.txt
-```
-contains of req file
-```
-dvc
-dvc[gdrive]
-sklearn
-```
-
 install req file
 ```bash
 pip install -r requirements.txt
 ```
-
-touch README.MD
-
-touch template.py
-
-write code in template file
-
-python template.py
-
-mkdir data_given
 
 download the data and keep in data_given folder
 
@@ -43,7 +23,39 @@ dvc init
 dvc add data_given/winequality.csv
 
 git add . 
+
 git commit -m "fist commit"
 
 git add . && git commit -m "update README.md"
 
+git remote add origin https://github.com/Nilesha14/simple-dvc-demo.git
+
+git branch -M main
+
+git push -u origin main
+
+
+tox command -
+```bash
+tox
+```
+
+for rebuilding -
+```bash
+tox -r 
+```
+
+pytest command
+```bash
+pytest -v
+```
+
+setup commands -
+```bash
+pip install -e . 
+```
+
+build your own package commands-
+```bash
+python setup.py sdist bdist_wheel
+```
